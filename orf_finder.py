@@ -21,6 +21,6 @@ while index < len(genome_sequence):
         
         if len(reading_frame) % 3 == 0 and len(reading_frame) >= 15:
             print(f"Начало считывания с индекса {start_index}, Конец считывания с индекса {stop_index}: {reading_frame}")
-        index = stop_index + 4
+    index += stop_index + 4
         # Начинаем поиск следующей рамки считывания после стоп-кодона
     index = stop_index + 4
